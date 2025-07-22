@@ -33,94 +33,90 @@ The project showcases practical implementation of relational database principles
 
 ## 🎯 Features
 
-- ✅ Add, update, and delete products in inventory  
-- ✅ Record transactions and auto-update stock  
-- ✅ Generate daily and monthly sales reports  
-- ✅ Employee shift scheduling  
-- ✅ Track profits and stock levels via triggers  
-- ✅ Alerts for expired and low-stock items  
+- Add, update, and delete products in inventory  
+- Record transactions and auto-update stock  
+- Generate daily and monthly sales reports  
+- Employee shift scheduling  
+- Track profits and stock levels via triggers  
+- Alerts for expired and low-stock items  
 
 ---
 
 ## ⚙️ Tools & Technologies
 
-| Tool               | Purpose                                |
-|--------------------|----------------------------------------|
-| **MySQL**          | Relational database engine             |
-| **phpMyAdmin**     | Web interface for executing queries    |
-| **MySQL Workbench**| Schema design and data modeling        |
-| **XAMPP**          | Localhost server and MySQL hosting     |
+- **MySQL** – Used as the core database engine  
+- **phpMyAdmin** – For executing and testing SQL queries  
+- **MySQL Workbench** – For schema modeling and query visualization  
+- **XAMPP** – Local server environment for hosting MySQL  
 
 ---
 
 ## 🧠 Core Components
 
-| Component            | Functionality Description                                   |
-|----------------------|-------------------------------------------------------------|
-| `Items`              | Stores product info with price, quantity, and expiry date  |
-| `Transactions`       | Handles purchase records and links to products             |
-| `Employees`          | Manages employee profiles and salaries                     |
-| `EmployeeSchedule`   | Tracks employee shifts and dates                           |
-| `DailySales`         | Logs daily sales metrics via triggers                      |
-| `SalesSummary`       | Aggregates monthly sales totals                            |
-| `MonthlyProfit`      | Calculates profit based on sales vs cost                   |
-| `Triggers`           | Automate updates like stock deduction and sales logging    |
+- **Items Table:** Stores product info with price, quantity, and expiration date  
+- **Transactions Table:** Manages purchase records and links with products  
+- **Employees Table:** Keeps employee data and salary information  
+- **EmployeeSchedule Table:** Logs employee shift schedules  
+- **DailySales Table:** Tracks day-to-day sales through triggers  
+- **SalesSummary Table:** Summarizes monthly item sales  
+- **MonthlyProfit Table:** Calculates profit by comparing revenue and cost  
+- **Triggers:** Used for automatic stock updates, sales logging, and alerts  
 
 ---
 
 ## 📊 Testing & Results
 
-The system was tested with sample data and validated through:
+The system was tested using a variety of SQL operations and verified the following:
 
-- ✔ Inventory adjustments after each sale  
-- ✔ Daily sales log updated via triggers  
-- ✔ Monthly profit generation with accurate formulas  
-- ✔ Shift allocation for employees reflected in schedule table  
-- ✔ Joins, subqueries, and aggregates verified successfully  
+- Inventory is adjusted automatically after each transaction  
+- Triggers update daily sales and monthly profits accurately  
+- Employee shift data reflects scheduled workdays  
+- SQL queries such as joins, subqueries, and aggregates perform well  
 
-**Performance Summary:**  
-- ⚡ Query execution time: Minimal  
-- 🧠 Memory usage: Efficient and normalized  
-- 🔁 Triggers: Reduced manual data updates  
+**Performance:**  
+- Queries run efficiently on localhost  
+- Schema is normalized to reduce redundancy  
+- Triggers automate data integrity maintenance  
 
 ---
 
 ## 🧪 Limitations
 
-- ❌ No front-end UI (SQL-based interaction only)  
-- ❌ No persistent backup mechanism  
-- ❌ Cannot handle large-scale transaction loads  
-- ❌ Requires basic SQL knowledge to operate  
-- ❌ Manual setup for schema and sample data  
+- No graphical interface – all interactions require SQL  
+- No built-in backup mechanism  
+- Not optimized for large-scale shop operations  
+- Requires basic SQL knowledge to operate  
+- Manual setup of schema and data insertion is needed  
 
 ---
 
 ## 📈 Future Improvements
 
-- 💻 Add GUI using Python Tkinter or web dashboard  
-- 🔐 Integrate user login and admin access roles  
-- 💾 Implement automated backups and recovery  
-- 📦 Barcode scanner integration for item lookup  
-- 📈 Predictive analytics for restocking and sales trends  
-- 🌐 Host on cloud server with remote access  
+- Add a graphical user interface using Tkinter, Flask, or React  
+- Implement login system with role-based access  
+- Introduce automatic backups and cloud storage  
+- Integrate barcode scanner functionality for faster transactions  
+- Add predictive analysis to forecast restock needs  
+- Enable remote access via hosted MySQL server  
 
 ---
 
 ## 👨‍💻 Author
 
-**Md Syful Islam**  
-🎓 B.Sc. in CSE (Day), Green University of Bangladesh  
-🧑‍🏫 **Course:** Database System Lab (CSE 210)  
-👩‍🏫 **Instructor:** Ms. Farhana Akter Sunny  
-📚 Section: **222 D3**  
-📅 Submitted on: **15 December 2024**
+**Md Syful Islam** 
+`Student ID: 222002111`  
+B.Sc. in CSE (Day), Green University of Bangladesh  
+Course: Database System Lab (CSE 210)  
+Instructor: Ms. Farhana Akter Sunny  
+Section: 222 D3  
+Submitted on: 15 December 2024  
 
 ---
 
 ## 📎 References
 
-1. [MySQL Triggers – JavaTpoint](https://www.javatpoint.com/mysql-trigger)  
-2. [MySQL Aggregate Functions – MySQL Docs](https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html)  
-3. [phpMyAdmin](http://localhost/phpmyadmin/)  
-4. [DBMS Project Ideas – UpGrad](https://www.upgrad.com/blog/dbms-project-ideas-for-beginners/)  
-
+1. https://www.javatpoint.com/mysql-trigger  
+2. https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html  
+3. http://localhost/phpmyadmin/  
+4. https://www.upgrad.com/blog/dbms-project-ideas-for-beginners/  
+5. https://www.youtube.com/watch?v=rIi1dvPdTHE  
