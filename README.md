@@ -33,12 +33,12 @@ The project showcases practical implementation of relational database principles
 
 ## 🎯 Features
 
-- Add, update, and delete products in inventory  
-- Record transactions and auto-update stock  
-- Generate daily and monthly sales reports  
-- Employee shift scheduling  
-- Track profits and stock levels via triggers  
-- Alerts for expired and low-stock items  
+- ✅ Add, update, and delete products in inventory  
+- ✅ Record transactions and auto-update stock  
+- ✅ Generate daily and monthly sales reports  
+- ✅ Schedule employee shifts and track attendance  
+- ✅ Track profits and stock levels via triggers  
+- ✅ Alerts for expired and low-stock items  
 
 ---
 
@@ -53,70 +53,71 @@ The project showcases practical implementation of relational database principles
 
 ## 🧠 Core Components
 
-- **Items Table:** Stores product info with price, quantity, and expiration date  
-- **Transactions Table:** Manages purchase records and links with products  
-- **Employees Table:** Keeps employee data and salary information  
-- **EmployeeSchedule Table:** Logs employee shift schedules  
-- **DailySales Table:** Tracks day-to-day sales through triggers  
-- **SalesSummary Table:** Summarizes monthly item sales  
-- **MonthlyProfit Table:** Calculates profit by comparing revenue and cost  
-- **Triggers:** Used for automatic stock updates, sales logging, and alerts  
+- **Items Table:** Stores product info (ID, name, price, quantity, expiry date)  
+- **Transactions Table:** Logs customer purchases and updates stock  
+- **Employees Table:** Stores employee name, role, salary, and ID  
+- **EmployeeSchedule Table:** Logs working hours and shift allocation  
+- **DailySales Table:** Tracks daily sales (trigger-based)  
+- **SalesSummary Table:** Aggregates item-wise monthly sales  
+- **MonthlyProfit Table:** Calculates revenue and net profit per month  
+- **Triggers:** Automate updates for sales, stock deduction, and profit entries  
 
 ---
 
 ## 📊 Testing & Results
 
-The system was tested using a variety of SQL operations and verified the following:
+The system was evaluated through hands-on SQL operations:
 
-- Inventory is adjusted automatically after each transaction  
-- Triggers update daily sales and monthly profits accurately  
-- Employee shift data reflects scheduled workdays  
-- SQL queries such as joins, subqueries, and aggregates perform well  
+| Operation                         | Result                                      |
+|----------------------------------|---------------------------------------------|
+| Insert transaction               | Auto-updated inventory and daily sales      |
+| Update item quantity             | Reflected in inventory and restock alerts   |
+| Schedule employee shift          | Recorded and retrievable by date filter     |
+| Trigger fire on delete           | Prevented invalid data removal              |
 
-**Performance:**  
-- Queries run efficiently on localhost  
-- Schema is normalized to reduce redundancy  
-- Triggers automate data integrity maintenance  
+**Performance Highlights:**
+
+- Optimized schema with normalization  
+- Fast trigger execution on localhost  
+- Aggregate queries tested for monthly reports  
 
 ---
 
 ## 🧪 Limitations
 
-- No graphical interface – all interactions require SQL  
-- No built-in backup mechanism  
-- Not optimized for large-scale shop operations  
-- Requires basic SQL knowledge to operate  
-- Manual setup of schema and data insertion is needed  
+- ❌ No graphical interface – interactions are SQL-based  
+- ❌ No built-in export or backup system  
+- ❌ Lacks authentication and role management  
+- ❌ Not optimized for high transaction volume  
+- ❌ Manual schema setup is required  
 
 ---
 
 ## 📈 Future Improvements
 
-- Add a graphical user interface using Tkinter, Flask, or React  
-- Implement login system with role-based access  
-- Introduce automatic backups and cloud storage  
-- Integrate barcode scanner functionality for faster transactions  
-- Add predictive analysis to forecast restock needs  
-- Enable remote access via hosted MySQL server  
+- 💻 Build GUI using **Tkinter**, **Flask**, or **React**  
+- 🔐 Add login authentication with user roles (admin, cashier)  
+- ☁️ Add cloud support or auto-backup features  
+- 📦 Integrate barcode scanner functionality  
+- 📈 Add dashboard with charts for real-time analytics  
+- 🤖 Implement AI for sales predictions and stock restock alerts  
 
 ---
 
 ## 👨‍💻 Author
 
-**Md Syful Islam** 
+**Md Syful Islam**  
 `Student ID: 222002111`  
-B.Sc. in CSE (Day), Green University of Bangladesh  
-Course: Database System Lab (CSE 210)  
-Instructor: Ms. Farhana Akter Sunny  
-Section: 222 D3  
-Submitted on: 15 December 2024  
+🎓 B.Sc. in CSE (Day), Green University of Bangladesh  
+🧑‍🏫 **Course:** Database System Lab (CSE 210)  
+👩‍🏫 **Instructor:** Ms. Farhana Akter Sunny  
+📚 **Section:** 222 D3  
+🗓️ **Submitted on:** 15 December 2024  
 
 ---
 
 ## 📎 References
 
-1. https://www.javatpoint.com/mysql-trigger  
-2. https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html  
-3. http://localhost/phpmyadmin/  
-4. https://www.upgrad.com/blog/dbms-project-ideas-for-beginners/  
-5. https://www.youtube.com/watch?v=rIi1dvPdTHE  
+1. [MySQL Trigger – JavaTpoint](https://www.javatpoint.com/mysql-trigger)  
+2. [Aggregate Functions – MySQL Docs](https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html)  
+3. [phpMyAdmin Localhost](http://localhost/phpmyadmin/)  
