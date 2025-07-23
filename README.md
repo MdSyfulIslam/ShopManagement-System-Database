@@ -1,6 +1,6 @@
 # 🛒 Shop Management System (MySQL-Based)
 
-A fully functional **Shop Management System** that automates inventory, sales, employee schedules, and profit tracking using **MySQL**. Designed for academic purposes, this project demonstrates how structured data and triggers can efficiently simulate a real-world retail system.This project was developed as part of the Database System Lab (CSE 210) course at Green University of Bangladesh.
+A fully functional **Shop Management System** that automates inventory, sales, employee schedules, and profit tracking using **MySQL**. Designed for academic purposes, this project demonstrates how structured data and triggers can efficiently simulate a real-world retail system.  This project was developed as part of the Database System Lab (CSE 210) course at Green University of Bangladesh.
 
 ---
 
